@@ -9,12 +9,31 @@ class HomeScreen extends StatelessWidget {
 
   final Completer<GoogleMapController> _controller = Completer();
 
+  List<Marker> listOfMarker = [
+    Marker(
+        markerId: MarkerId('1'),
+      position: LatLng(34.1612, 71.8453),
+      infoWindow: InfoWindow(
+        title: 'Sardhari',
+        onTap: () {}
+      )
+    ),
+    Marker(
+        markerId: MarkerId('2'),
+      position: LatLng(34.171975, 71.873495),
+      infoWindow: InfoWindow(
+        title: 'Home',
+      )
+    )
+  ];
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
         body: GoogleMap(
-          mapType: MapType.hybrid,
+          markers: Set.of(listOfMarker),
+          // mapType: MapType.normal,
             initialCameraPosition: CameraPosition(
             target: LatLng(34.1612, 71.8453),
             zoom: 14.0

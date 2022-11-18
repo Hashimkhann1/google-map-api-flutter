@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_maps/geocoading_loaction.dart';
 import 'package:google_maps/home_screen.dart';
 
 void main() {
@@ -13,6 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: HomeScreen(),
+      // home: GeoCoadingLocation(),
     );
   }
 }
