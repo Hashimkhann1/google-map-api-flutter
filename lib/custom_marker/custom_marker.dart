@@ -19,10 +19,8 @@ class _CustomMarkerState extends State<CustomMarker> {
   List<Marker> listMarkers = [];
 
   List<String> imagesPath = [
-    'images/motorcycle.png'
-    'images/delivery-truck.png',
-    'images/bicycle.png' , 'images/car.png' , 'images/car1.png',
-    'images/car2.png', 'images/hatchback.png',
+    'images/bicycle.png' , 'images/car.png' , 'images/car1.png','images/motorcycle.png',
+    'images/car2.png', 'images/hatchback.png''images/delivery-truck.png',
   ];
 
   List<LatLng> listCoordinates = [
